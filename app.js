@@ -45,3 +45,13 @@ function toggleComplete(id) {
 
 
 loadTodos();
+
+function editTodo(id, newTitle, newCategory) {
+    const todo = todos.find(todo => todo.id === id);
+    if (todo) {
+        todo.title = newTitle;
+        todo.category = newCategory;
+        saveTodos();
+        console.log('Todo modificato:', todo);
+    }
+}
