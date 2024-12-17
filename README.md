@@ -7,7 +7,7 @@ Questa è una Todo App avanzata sviluppata in JavaScript, con Git e GitHub utili
 ## Installazione e Avvio
 Passaggi per installare e avviare il progetto:
 
-1. Clona la repository:
+1. Clonazione della repository:
    ```bash
    git clone https://github.com/danielbaires55/esamino-git-rivera.git
 
