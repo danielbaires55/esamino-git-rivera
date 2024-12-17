@@ -26,3 +26,11 @@ function toggleComplete(id) {
         console.log('Todo aggiornato:', todo);
     }
 }
+
+function filterTodos(status, category) {
+    return todos.filter(todo => {
+        const statusMatch = status === 'all' || (status === 'completed' && todo.completed) || (status === 'not-completed' && !todo.completed);
+        const categoryMatch = category === 'all' || todo.category === category;
+        return statusMatch && categoryMatch;
+    });
+}
