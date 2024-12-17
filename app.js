@@ -18,7 +18,7 @@ function addTodo(title, category) {
     const todo = {
         id: nextId++,
         title,
-        category,
+        category, // Corretto: categoria inclusa
         completed: false
     };
     todos.push(todo);
