@@ -55,3 +55,9 @@ function editTodo(id, newTitle, newCategory) {
         console.log('Todo modificato:', todo);
     }
 }
+
+function getCompletedCount() {
+    const completed = todos.filter(todo => todo.completed).length;
+    const notCompleted = todos.length - completed;
+    console.log(`Completati: ${completed}, Non completati: ${notCompleted}`);
+}
