@@ -61,3 +61,7 @@ function getCompletedCount() {
     const notCompleted = todos.length - completed;
     console.log(`Completati: ${completed}, Non completati: ${notCompleted}`);
 }
+
+function temporaryFeature() {
+    console.log('Funzionalità temporanea completata');
+}
