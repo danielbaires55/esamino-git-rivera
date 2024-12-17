@@ -34,14 +34,14 @@ function deleteTodo(id) {
 }
 
 
-// function toggleComplete(id) {
-//     const todo = todos.find(todo => todo.id === id);
-//     if (todo) {
-//         todo.completed = !todo.completed;
-//         saveTodos();
-//         console.log('Todo aggiornato:', todo);
-//     }
-// }
+function toggleComplete(id) {
+    const todo = todos.find(todo => todo.id === id);
+    if (todo) {
+        todo.completed = !todo.completed;
+        saveTodos();
+        console.log('Todo aggiornato:', todo);
+    }
+}
 
 
 loadTodos();
