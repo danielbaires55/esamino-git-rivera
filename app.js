@@ -45,3 +45,9 @@ function toggleComplete(id) {
 
 
 loadTodos();
+
+function getCompletedCount() {
+    const completed = todos.filter(todo => todo.completed).length;
+    const notCompleted = todos.length - completed;
+    console.log(`Completati: ${completed}, Non completati: ${notCompleted}`);
+}
